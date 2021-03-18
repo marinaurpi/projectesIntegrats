@@ -1,10 +1,10 @@
-# projectesIntegrats
+# Projectes Integrats
 
-## EL RESTAURANT
+# EL RESTAURANT
 
-### Idea del client
+## Idea del client
 
-Joc ambientat en un restaurant italià. Hi haurà un cambrer i el nen serà el cuiner.
+Joc per móbil ambientat en un restaurant italià. Hi haurà un cambrer i el nen serà el cuiner.
 L’objecitu del joc es preparar les comandes correctament (segons la recepta) en el temps requerit i en l’ordre que arriben.
 Cada recepta consta de: material (aliments, objectes,..), objecitu (que es vol aconseguir), passo a seguir.
 
@@ -25,3 +25,73 @@ Exercicis:
 * Córrer fent tres voltes a on estigui sentat
 * Fer 10 flexions (nens de 10-18)
 * Fer 10 abdominals (nens de 10-18)
+
+
+## Esbós escena del joc
+
+![kitchen sketch food](https://user-images.githubusercontent.com/48218009/111682890-2a503880-8825-11eb-81a8-1c074f28c8b0.png)
+![kitchen sketch principal](https://user-images.githubusercontent.com/48218009/111682900-2d4b2900-8825-11eb-87d5-9f27ae1eb7ad.png)
+
+## Assets necessaris
+
+### DEVICES
+1. Nevera (tancada, oberta)
+1. Forn (tancat, tancat amb llum, obert, obert amb llum)
+1. Batidora (oberta, tancada)
+1. Bol fruita (4-7 tipus)
+1. Rebost (armaris o estanteries?)
+1. Torradora (apagada, encesa pa torrades, encesa pa llesques?)
+
+TOOLS
+1.	Got
+2.	Plat
+3.	Ganivet
+4.	Paella
+5.	Olla
+6.	Tallapizzes
+7.	Guants forn
+8.	Escorridor
+9.	Bol gelat
+10.	Cullera gelat
+
+INGREDIENTS
+
+1.	Begudes:
+a.	Cocacola (ampolla i got)
+b.	Fanta (ampolla i got)
+c.	Aigua (ampolla i got)
+d.	Llet (ampolla o brick i got)
+2.	Aliments:
+a.	Fruita:
+i.	Taronja (sensera, pelada i tallada)
+ii.	Pinya (sensera, pelada i tallada)
+iii.	Platan (sensera, pelada i tallada)
+iv.	Poma (sensera, pelada i tallada) NOT SURE?
+v.	Maduixes (senseres, tallades) NOT SURE?
+vi.	Nabius (sensers) NOT SURE?
+vii.	Kiwi (senser, pelat, tallat) NOT SURE?
+b.	Pa:
+i.	Pa hamburguesa
+ii.	Pa torrades
+iii.	Pa torrades torrat
+iv.	Llesques pa
+v.	LLesques pa torrat
+c.	Verdura:
+i.	Tomaquet (senser, tallat)
+ii.	Ceba (senser, pelat, tallat)
+iii.	Enciam (senser, tallat)
+d.	Embutit:
+i.	Pernil (envas, fora)
+ii.	Salami (envas, fora)
+iii.	Bacon (envas, fora, cuinat)
+iv.	Hamburguesa (envas, fora, cuinat)
+v.	Pollaste (envas, fora, cuinat)
+e.	Pot mantega
+f.	Mermelada:
+i.	Maduixa
+ii.	Préssec
+iii.	Taronja
+g.	Oli
+
+
+## Primeres mecàniques

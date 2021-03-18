@@ -42,7 +42,7 @@ Exercicis:
 1. Rebost (armaris o estanteries?)
 1. Torradora (apagada, encesa pa torrades, encesa pa llesques?)
 
-TOOLS
+### TOOLS
 1.	Got
 2.	Plat
 3.	Ganivet
@@ -54,44 +54,43 @@ TOOLS
 9.	Bol gelat
 10.	Cullera gelat
 
-INGREDIENTS
-
+### INGREDIENTS
 1.	Begudes:
-a.	Cocacola (ampolla i got)
-b.	Fanta (ampolla i got)
-c.	Aigua (ampolla i got)
-d.	Llet (ampolla o brick i got)
+  * Cocacola (ampolla i got)
+  * Fanta (ampolla i got)
+  * Aigua (ampolla i got)
+  * Llet (ampolla o brick i got)
 2.	Aliments:
-a.	Fruita:
-i.	Taronja (sensera, pelada i tallada)
-ii.	Pinya (sensera, pelada i tallada)
-iii.	Platan (sensera, pelada i tallada)
-iv.	Poma (sensera, pelada i tallada) NOT SURE?
-v.	Maduixes (senseres, tallades) NOT SURE?
-vi.	Nabius (sensers) NOT SURE?
-vii.	Kiwi (senser, pelat, tallat) NOT SURE?
-b.	Pa:
-i.	Pa hamburguesa
-ii.	Pa torrades
-iii.	Pa torrades torrat
-iv.	Llesques pa
-v.	LLesques pa torrat
-c.	Verdura:
-i.	Tomaquet (senser, tallat)
-ii.	Ceba (senser, pelat, tallat)
-iii.	Enciam (senser, tallat)
-d.	Embutit:
-i.	Pernil (envas, fora)
-ii.	Salami (envas, fora)
-iii.	Bacon (envas, fora, cuinat)
-iv.	Hamburguesa (envas, fora, cuinat)
-v.	Pollaste (envas, fora, cuinat)
-e.	Pot mantega
-f.	Mermelada:
-i.	Maduixa
-ii.	Préssec
-iii.	Taronja
-g.	Oli
+  * Fruita:
+    * Taronja (sensera, pelada i tallada)
+    * Pinya (sensera, pelada i tallada)
+    * Platan (sensera, pelada i tallada)
+    * Poma (sensera, pelada i tallada) **NOT SURE?**
+    * Maduixes (senseres, tallades) **NOT SURE?**
+    * Nabius (sensers) **NOT SURE?**
+    * Kiwi (senser, pelat, tallat) **NOT SURE?**
+  * Pa:
+    * Pa hamburguesa
+    * Pa torrades
+    * Pa torrades torrat
+    * Llesques pa
+    * LLesques pa torrat
+  * Verdura:
+    * Tomaquet (senser, tallat)
+    * Ceba (senser, pelat, tallat)
+    * Enciam (senser, tallat)
+  * Embutit:
+    * Pernil (envas, fora)
+    * Salami (envas, fora)
+    * Bacon (envas, fora, cuinat)
+    * Hamburguesa (envas, fora, cuinat)
+    * Pollaste (envas, fora, cuinat)
+* Pot mantega
+* Mermelada: 
+  * Maduixa
+  * Préssec 
+  * Taronja
+* Oli
 
 
 ## Primeres mecàniques

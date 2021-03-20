@@ -2,7 +2,7 @@
 
 # EL RESTAURANT
 
-## Idea del client
+## Client idea
 
 Joc per móbil ambientat en un restaurant italià. Hi haurà un cambrer i el nen serà el cuiner.
 L’objecitu del joc es preparar les comandes correctament (segons la recepta) en el temps requerit i en l’ordre que arriben.
@@ -27,12 +27,12 @@ Exercicis:
 * Fer 10 abdominals (nens de 10-18)
 
 
-## Esbós escena del joc
+## First scene structure ideas
 
 ![kitchen sketch food](https://user-images.githubusercontent.com/48218009/111682890-2a503880-8825-11eb-81a8-1c074f28c8b0.png)
 ![kitchen sketch principal](https://user-images.githubusercontent.com/48218009/111682900-2d4b2900-8825-11eb-87d5-9f27ae1eb7ad.png)
 
-## Assets necessaris
+## Necessary assets
 
 ### DEVICES
 1. Nevera (tancada, oberta)
@@ -93,4 +93,22 @@ Exercicis:
 * Oli
 
 
-## Primeres mecàniques
+## Main mechanics
+
+### Item creators
+
+Objects where items will be spawned (fridge, shelves)
+#### Code
+
+private void OnMouseDown()
+    {
+        if (Input.GetMouseButtonDown(0)) {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+            Instantiate(item, this.transform);
+        }
+        
+    }
+}

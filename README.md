@@ -99,7 +99,7 @@ Exercicis:
 
 Objects where items will be spawned (fridge, shelves)
 #### Code
-
+```
 private void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0)) {
@@ -112,3 +112,150 @@ private void OnMouseDown()
         
     }
 }
+```
+### Item behaviour
+
+#### Code
+
+```
+
+public class boxScript : MonoBehaviour
+{
+    private float startPosX;
+    private float startPosY;
+    private bool isBeingHeld = false;
+    private bool inInventory = false;
+    private bool inBin = false;
+    private bool inStoves = false;
+    private bool inWaiter = false;
+    private bool inTable = false;
+    private Vector3 mousePos = new Vector3();
+    private GameObject scenePanel;
+    private GameObject inventory;
+    // Update is called once per frame
+
+    void Start()
+    {
+        startPosX = transform.position.x;
+        startPosY = transform.position.y;
+        scenePanel = GameObject.Find("ScenePanel");
+        inventory = GameObject.Find("Inventory");
+
+    }
+    void Update()
+    {
+        if (isBeingHeld == true)
+        {
+            mousePos = Input.mousePosition;
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+            this.gameObject.transform.localPosition = new Vector3(mousePos.x, mousePos.y, 0);
+
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            isBeingHeld = true;
+            gameObject.transform.SetParent(null);
+        }
+    }
+
+    private void OnMouseUp()
+    {
+        isBeingHeld = false;
+
+        if (inInventory)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
+            gameObject.transform.SetParent(inventory.transform);
+            print("inv");
+        }
+
+        else if (inBin)
+        {
+            Destroy(gameObject);
+            print("puff");
+        }
+
+        else if (inStoves){
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 0, 0);
+            print("stoves");
+        }
+
+        else if (inTable){
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 255, 255);
+            print("table");
+        }
+
+        else if (inWaiter){
+            Destroy(gameObject);
+            print("delireved");
+        }
+
+        else{
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 255);
+            gameObject.transform.SetParent(scenePanel.transform);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Inventory")
+        {
+            inInventory = true;
+        }
+
+        if (collision.gameObject.tag == "Bin")
+        {
+            inBin = true;
+        }
+
+        if (collision.gameObject.tag == "Stoves")
+        {
+            inStoves = true;
+        }
+
+        if (collision.gameObject.tag == "Table")
+        {
+            inTable = true;
+        }
+
+        if (collision.gameObject.tag == "Waiter")
+        {
+            inWaiter = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Inventory")
+        {
+            inInventory = false;
+        }
+
+        if (collision.gameObject.tag == "Bin")
+        {
+            inBin = false;
+        }
+
+        if (collision.gameObject.tag == "Stoves")
+        {
+            inStoves = false;
+        }
+
+        if (collision.gameObject.tag == "Table")
+        {
+            inTable = false;
+        }
+
+        if (collision.gameObject.tag == "Waiter")
+        {
+            inWaiter = false;
+        }
+
+    }
+}
+```

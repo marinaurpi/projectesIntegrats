@@ -162,6 +162,7 @@ Essencial to get the gameobject where the item can be placed just after being cr
     }
     
  ```
+ 
  Detecting when is started to being held.
  ```
     private void OnMouseDown()
@@ -174,6 +175,7 @@ Essencial to get the gameobject where the item can be placed just after being cr
     }
     
  ```
+ 
  Detecting when is being dropped and know on which element is being located of the scene.
  ```
 
@@ -216,6 +218,7 @@ Essencial to get the gameobject where the item can be placed just after being cr
     }
     
  ```
+ 
  Detecting when the item being held is entering and leaving each diferent parts of the scene.
  ```
 

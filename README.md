@@ -97,7 +97,7 @@ Exercicis:
 
 ### Item creators
 
-Objects where items will be spawned (fridge, shelves)
+Objects where items will be spawned (fridge, shelves).
 #### Code
 ```
 private void OnMouseDown()
@@ -115,33 +115,40 @@ private void OnMouseDown()
 ```
 ### Item behaviour
 
+The goal is to make the object movable when pressing and holding the mouse button (or the finger in mobile devices). Also to detect when is not being held anymore as well as detecting where is being positionated.
+
 #### Code
 
+Variables
 ```
-
 public class boxScript : MonoBehaviour
 {
-    private float startPosX;
-    private float startPosY;
     private bool isBeingHeld = false;
     private bool inInventory = false;
     private bool inBin = false;
     private bool inStoves = false;
     private bool inWaiter = false;
     private bool inTable = false;
+    
     private Vector3 mousePos = new Vector3();
+    
     private GameObject scenePanel;
     private GameObject inventory;
     // Update is called once per frame
+```
 
+Essencial to get the gameobject where the item can be placed just after being created.
+```
     void Start()
     {
-        startPosX = transform.position.x;
-        startPosY = transform.position.y;
         scenePanel = GameObject.Find("ScenePanel");
         inventory = GameObject.Find("Inventory");
 
     }
+ ```
+ 
+ Detecting when the item is being held and moving it together with the cursor (or finger).
+ ```
     void Update()
     {
         if (isBeingHeld == true)
@@ -153,7 +160,10 @@ public class boxScript : MonoBehaviour
 
         }
     }
-
+    
+ ```
+ Detecting when is started to being held.
+ ```
     private void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))
@@ -162,6 +172,10 @@ public class boxScript : MonoBehaviour
             gameObject.transform.SetParent(null);
         }
     }
+    
+ ```
+ Detecting when is being dropped and know on which element is being located of the scene.
+ ```
 
     private void OnMouseUp()
     {
@@ -200,6 +214,10 @@ public class boxScript : MonoBehaviour
             gameObject.transform.SetParent(scenePanel.transform);
         }
     }
+    
+ ```
+ Detecting when the item being held is entering and leaving each diferent parts of the scene.
+ ```
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
